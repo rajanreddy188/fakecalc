@@ -1,20 +1,16 @@
 # iOS-style Calculator
 
-A single-file, client-side calculator designed to closely match the portrait iPhone Calculator layout in Safari.
+A single-file, client-side calculator designed to closely match the iPhone Calculator portrait layout from the supplied reference screenshot.
 
-## What it includes
-- iOS-inspired black layout, typography, circular keys, and orange operators
-- +, −, ×, ÷, %, ±, decimal, clear, backspace, and equals
-- Chained calculations
+## Included
+- Backspace, AC, %, ÷, ×, −, +, ±, decimal, 0–9, and =
+- Chained arithmetic
+- Calculation history via localStorage
 - Keyboard support on desktop
-- Calculation history using localStorage
-- Mobile safe-area handling
-- Home-screen/web-app metadata
-
-## Run locally
-Open `index.html` in a browser.
+- iPhone safe-area handling and standalone web-app metadata
+- No build step or backend
 
 ## GitHub Pages
-Put these files in the root of a GitHub repository and enable GitHub Pages from Settings → Pages.
+Upload `index.html`, `manifest.webmanifest`, `icon-180.png`, and `README.md` to the root of a GitHub repository. Enable GitHub Pages from Settings → Pages → Deploy from a branch → main → / (root).
 
-No build step is required.
+Apple's private Calculator/SF Symbols assets are not distributed as a public web library, so the interface uses CSS and inline SVG to reproduce the appearance.
